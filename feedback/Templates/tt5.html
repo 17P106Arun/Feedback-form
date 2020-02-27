@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+<head>
+<style> 
+div.page1 {
+  width:600px;
+  margin: auto;
+  border: 0.15px solid grey;
+  padding: 25px;
+}
+input[type=text] {
+  width: 45%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.pagination a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+</style>
+
+</head>
+<body>
+<div class="page1">
+<h1>Demo scores</h1>
+<p>1 : Mandatory hygiene parameters (Criteria – 1)<br>
+2 : Parameters required to clear the demo (Criteria-2)<br>
+3 : Proficiency parameters (Criteria-3)</p><br><p>* Required</p><br>
+<form method="POST" action ="/tt2.html"><h4>Name of the trainer *</h4>
+<input type ="text" name="name" placeholder="your answer" required><br><br>
+<h4>Emp ID *</h4>
+<input type ="text" name="id" placeholder="your answer" required><br><br>
+<h4>Evaluator *</h4>
+<input type ="text" name="evalua1" placeholder="your answer" required><br><br>
+<h4>Date of demo *</h4>
+<input type ="text" name="d_o_d" required><br>
+<h4>L2 test score </h4>
+<input type ="text" name="score" placeholder="your answer" required><br><br>
+<h4>Level *</h4>
+<select name = "level">
+      <option value = "choose" selected>Choose</option>
+            <option value = "L1.5" selected>L1.5</option>
+            <option value = "L3">L3</option>
+            <option value = "Other">Other</option>
+         </select><br><br>
+<h4>Topic *</h4>
+<input type ="text" name="topic" placeholder="your answer" required><br><br>
+<br>
+<button type="submit" name="sumitbutton">Next</button>
+</form>
+</div>
+</body>
+</html>
